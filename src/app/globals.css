@@ -27,3 +27,7 @@ h1 h4 {
 h2 h3 h5 p {
   font-family: var(--text);
 }
+
+body {
+  background-color: var(--bg);
+}
