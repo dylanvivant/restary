@@ -36,13 +36,13 @@ export default function Carrousel() {
         <section className="carrousel">
             <div className={'slide'} >
 
-                <img src="/carrousel/image-1.webp" alt="restaurant" className="image" width={1140} height={440} />
+                <img src="/carrousel/image-1.webp" alt="restaurant" className="image" width={1140} height={450} />
 
             </div>
             <div className="content-slide">
                 <div className="text">
                     <h2>Welcome</h2>
-                    <h1 className="cssanimation sequence leRotateYZoomIn">                        {animatedText}</h1>
+                    <h1 className="cssanimation sequence leRotateYZoomIn">{animatedText}</h1>
                     <p>Enjoy a rich variety of dishes and aromatic coffee, selection of juices, aromatic teas and delicious desserts made by our Pastry Chef.</p>
                 </div>
                 <div className="button-slide">

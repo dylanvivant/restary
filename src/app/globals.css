@@ -9,6 +9,7 @@
   --title: 'Merriweather', serif;
   --text: 'Inter', sans-serif;
   --logo-font: 'Praise', cursive;
+  --price: 'Poppins', sans-serif;
 
 }
 
@@ -24,6 +25,13 @@ body {
   background-color: var(--bg);
   max-width: 1140px;
   margin: auto;
+}
+
+h2 {
+  font-family: var(--text);
+  color: var(--orange);
+  font-size: 16px;
+  text-align: center;
 }
 
 .app {
