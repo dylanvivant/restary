@@ -20,14 +20,19 @@
   list-style-type: none;
 }
 
-h1 h4 {
-  font-family: var(--title);
-}
-
-h2 h3 h5 p {
-  font-family: var(--text);
-}
-
 body {
   background-color: var(--bg);
+  max-width: 1140px;
+  margin: auto;
+}
+
+.app {
+  position: relative;
+}
+
+main {
+
+  z-index: 1;
+  position: relative;
+
 }

@@ -1,12 +1,15 @@
 import styles from './page.module.css'
 
 import Navbar from './component/navbar/Navbar'
+import Carrousel from './component/carrousel/Carrousel'
 
 export default function Home() {
   return (
-    <header>
+    <div className='app'>
       <Navbar />
-    </header>
-
+      <main>
+        <Carrousel />
+      </main>
+    </div>
   )
 }

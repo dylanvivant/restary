@@ -1,23 +1,23 @@
 nav {
     display: flex;
     justify-content: space-between;
-    width: 85vw;
+    width: 1140px;
     margin: auto;
-    height: 5vh;
+    height: 7vh;
     align-items: center;
 }
 
 .logo {
     font-family: var(--logo-font);
-    font-size: 2.5vw;
+    font-size: 40px;
     color: var(--orange);
     cursor: pointer;
 }
 
 .nav-links {
     display: flex;
-    width: 30vw;
-    justify-content: space-between;
+    width: 25%;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -28,7 +28,7 @@ nav {
 .nav-links li {
     font-family: var(--text);
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 12px;
 }
 
 .nav-links li a:active {
@@ -42,6 +42,7 @@ nav {
     width: 5vw;
     justify-content: space-between;
     flex-direction: row-reverse;
+    animation: backInUp 1s ease-in-out;
 }
 
 .social-icon {
@@ -53,6 +54,28 @@ nav {
 details {
     display: none;
 }
+
+@keyframes backInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.backInUp {
+    animation-name: backInUp;
+}
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -144,5 +167,6 @@ details {
     .social-icon {
         font-size: 3vw;
     }
+
 
 }
