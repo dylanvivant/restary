@@ -1,3 +1,7 @@
+.popular {
+    margin-bottom: 10vh;
+}
+
 .container {
     height: 840px;
     display: flex;
@@ -95,12 +99,12 @@ h3 {
 
 .slider-mask::before {
     left: 0;
-    background: linear-gradient(to right, #fff 0%, transparent 100%);
+    background: linear-gradient(to right, #FFFBF5 0%, transparent 100%);
 }
 
 .slider-mask::after {
     right: 0;
-    background: linear-gradient(to left, #fff 0%, transparent 100%);
+    background: linear-gradient(to left, #FFFBF5 0%, transparent 100%);
 }
 
 .button {

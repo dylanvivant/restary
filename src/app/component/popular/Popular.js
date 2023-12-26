@@ -1,10 +1,14 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
+
 import Slider from 'react-slick';
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import Card from './component/Card'
+
 import './style.css'
 
 import { mostPopular } from '@/app/data/mostpopular';
@@ -42,6 +46,7 @@ export default function Popular() {
 
                     </Link>
                 </div>
+
             </div>
         </section>
     );
