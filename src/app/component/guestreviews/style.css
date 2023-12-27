@@ -8,9 +8,9 @@ article {
 }
 
 .reviews {
-    width: 50%;
+    width: 49%;
     border-left: 1px solid var(--orange);
-    padding-left: 5%;
+    padding-left: 4%;
     height: 800px;
 }
 

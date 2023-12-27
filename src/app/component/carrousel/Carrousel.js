@@ -6,7 +6,7 @@ import './style.css'
 import 'animate.css';
 
 
-export default function Carrousel() {
+export default function Carrousel({ Click }) {
 
     const [animatedText, setAnimatedText] = useState([]);
 
@@ -46,10 +46,8 @@ export default function Carrousel() {
                     <p>Enjoy a rich variety of dishes and aromatic coffee, selection of juices, aromatic teas and delicious desserts made by our Pastry Chef.</p>
                 </div>
                 <div className="button-slide">
-                    <Link href={'#reserve'}>
-                        <button className='btn-1'>RESERVE A TABLE</button>
+                    <button onClick={Click} className='btn-1'>RESERVE A TABLE</button>
 
-                    </Link>
                     <Link href={'/menu'}>
                         <button className='btn-2'>BROWSE MENU</button>
 

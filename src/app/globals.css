@@ -39,8 +39,7 @@ h2 {
 }
 
 main {
+  margin-top: 7vh;
 
-  z-index: 1;
-  position: relative;
 
 }

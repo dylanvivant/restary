@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 import './style.css'
 
-export default function Table() {
+const Table = React.forwardRef((props, ref) => {
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -29,7 +29,8 @@ export default function Table() {
     };
 
     return (
-        <section className="reservation-form-container">
+
+        <section ref={ref} id={props.id} className="reservation-form-container">
             <h2>Reserve</h2>
             <h4>Your Table</h4>
             <p>Once you've made a reservation, kindly await for our confirmation email.</p>
@@ -98,4 +99,6 @@ export default function Table() {
             </form>
         </section>
     );
-};
+});
+
+export default Table;

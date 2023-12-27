@@ -1,3 +1,8 @@
+header {
+    width: 1140px;
+    margin: auto;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -5,6 +10,10 @@ nav {
     margin: auto;
     height: 7vh;
     align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: var(--bg);
 }
 
 .logo {
@@ -29,9 +38,10 @@ nav {
     font-family: var(--text);
     font-weight: 600;
     font-size: 12px;
+    cursor: pointer;
 }
 
-.nav-links li a:active {
+.nav-links li:hover {
     border-bottom: 2px solid var(--orange);
 }
 
@@ -39,14 +49,13 @@ nav {
 .social-links {
     display: flex;
     align-items: center;
-    width: 5vw;
+    width: 4vw;
     justify-content: space-between;
     flex-direction: row-reverse;
-    animation: backInUp 1s ease-in-out;
 }
 
 .social-icon {
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: var(--orange);
     cursor: pointer;
 }
@@ -55,9 +64,9 @@ details {
     display: none;
 }
 
-@keyframes backInUp {
+/* @keyframes backInUp {
     0% {
-        transform: translateY(50px);
+        transform: translateY(0px);
         opacity: 0;
     }
 
@@ -73,7 +82,7 @@ details {
 
 .backInUp {
     animation-name: backInUp;
-}
+} */
 
 
 

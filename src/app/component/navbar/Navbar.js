@@ -10,7 +10,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import './style.css'
 
-export default function Navbar() {
+export default function Navbar({ Click }) {
     return (
         <header>
             <nav>
@@ -23,10 +23,8 @@ export default function Navbar() {
                 </Link>
 
                 <ul id='links-pc' className="nav-links">
-                    <li>
-                        <Link href="#reserve">
-                            <span>RESERVE A TABLE</span>
-                        </Link>
+                    <li onClick={Click}>
+                        <span>RESERVE A TABLE</span>
                     </li>
                     <li>
                         <Link href="/menu">
