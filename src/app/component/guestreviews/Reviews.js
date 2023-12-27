@@ -39,7 +39,7 @@ export default function ReviewsSection() {
                 <div className="slider-mask-z">
                     <Slider {...settings}>
                         {Reviews.map((item, index) => (
-                            <GuestReviews key={index} name={item.Name} image={item.Image} alt={item.Name} icon={item.Icon} social={item.Social} content={item.Review} />
+                            <GuestReviews key={index} name={item.Name} image={item.Image} alt={item.Name} icon={item.Icon} alticon={item.Plateform} social={item.Social} content={item.Review} />
                         ))}
                     </Slider>
                 </div>

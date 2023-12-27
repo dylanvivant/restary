@@ -55,7 +55,7 @@ article {
 .slider-mask-z::before {
     top: 0;
     background: linear-gradient(to bottom, #FFFBF5 0%, transparent 100%);
-    width: 75%;
+    width: 80%;
 
 }
 
@@ -64,7 +64,7 @@ article {
     top: auto;
     /* Assurez-vous que l'élément est positionné en bas */
     background: linear-gradient(to top, #FFFBF5 0%, transparent 100%);
-    width: 75%;
+    width: 80%;
 }
 
 .header-review {
@@ -82,8 +82,10 @@ article {
 
 .name {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 65%;
+    margin-left: 10px;
+    align-items: center;
 }
 
 .name h4 {
