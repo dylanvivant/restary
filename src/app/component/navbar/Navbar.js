@@ -24,7 +24,10 @@ export default function Navbar({ Click }) {
 
                 <ul id='links-pc' className="nav-links">
                     <li onClick={Click}>
-                        <span>RESERVE A TABLE</span>
+                        <Link href={"/#reserve"}>
+                            <span>RESERVE A TABLE</span>
+
+                        </Link>
                     </li>
                     <li>
                         <Link href="/menu">

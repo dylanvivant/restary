@@ -48,7 +48,7 @@ const Footer = () => {
                                 <li>Starters</li>
 
                             </Link>
-                            <Link href="soup">
+                            <Link href="#soup">
                                 <li>Soup</li>
 
                             </Link>
@@ -56,12 +56,16 @@ const Footer = () => {
                                 <li>Salads</li>
 
                             </Link>
-                            <Link href="Risotto">
+                            <Link href="#risotto">
                                 <li>Risotto</li>
 
                             </Link>
-                            <Link href="fish">
+                            <Link href="#meat-and-fish">
                                 <li>Meat and fish</li>
+
+                            </Link>
+                            <Link href="#side-dishes">
+                                <li>Side dishes</li>
 
                             </Link>
 
