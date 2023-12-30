@@ -1,23 +1,32 @@
+header {
+    width: 1140px;
+    margin: auto;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    width: 85vw;
+    width: 1140px;
     margin: auto;
-    height: 5vh;
+    height: 7vh;
     align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: var(--bg);
 }
 
 .logo {
     font-family: var(--logo-font);
-    font-size: 2.5vw;
+    font-size: 40px;
     color: var(--orange);
     cursor: pointer;
 }
 
 .nav-links {
     display: flex;
-    width: 30vw;
-    justify-content: space-between;
+    width: 25%;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -28,10 +37,11 @@ nav {
 .nav-links li {
     font-family: var(--text);
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 12px;
+    cursor: pointer;
 }
 
-.nav-links li a:active {
+.nav-links li:hover {
     border-bottom: 2px solid var(--orange);
 }
 
@@ -39,13 +49,13 @@ nav {
 .social-links {
     display: flex;
     align-items: center;
-    width: 5vw;
+    width: 4vw;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
 
 .social-icon {
-    font-size: 1.5vw;
+    font-size: 1vw;
     color: var(--orange);
     cursor: pointer;
 }
@@ -55,94 +65,34 @@ details {
 }
 
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1140px) {
+
+    nav {
+        width: 100vw;
+    }
 
     .logo {
-        font-size: 5vw;
-        position: fixed;
-        top: 5px;
-    }
+        margin-left: 5px;
+        font-size: 3vw;
 
-    nav details[open] {
-        height: 35vh;
-        background: var(--bg);
-    }
-
-    details {
-        display: block;
-        width: 100%;
-        height: 25vh;
-    }
-
-    details[open] .menu-icon {
-        display: none;
-        /* Masque l'icône de menu */
-    }
-
-    details[open] .close-icon {
-        display: inline;
-        /* ou 'block', pour afficher l'icône de fermeture */
-    }
-
-    summary {
-        position: fixed;
-        top: 9px;
-
-        right: 25px;
-        font-size: 12px;
-        color: var(--orange);
-        cursor: pointer;
-    }
-
-    .menu-icon {
-        display: inline;
-        /* ou 'block', selon votre mise en page */
-    }
-
-    .close-icon {
-        display: none;
-        /* Masque l'icône de fermeture par défaut */
-    }
-
-    #links-pc {
-        display: none;
-    }
-
-    #social-pc {
-        display: none;
-    }
-
-    .menu-mobile {
-        position: fixed;
-        top: 35px;
-        left: 35%;
     }
 
     .nav-links {
-        height: 20vh;
-        justify-content: space-around;
-        flex-direction: column;
+        width: 50vw;
     }
 
     .nav-links li {
-
-        border-radius: 10px;
-        text-align: center;
-        border: none;
-        cursor: pointer;
-        background: #E0E0E0;
-        padding: 12px 0 12px 0;
-        width: 80px;
-        /* margin: auto; */
+        font-size: 1.5vw;
     }
 
     .social-links {
-        width: 30vw;
-        justify-content: space-around;
+        width: 12vw;
+        justify-content: space-evenly;
     }
 
     .social-icon {
         font-size: 3vw;
-    }
 
+    }
 }

@@ -10,80 +10,83 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import './style.css'
 
-export default function Navbar() {
+export default function Navbar({ Click }) {
     return (
-        <nav>
-            <Link href={'/'}>
-                <div className="logo">
-                    <span className="logo">
-                        Restary
-                    </span>
-                </div>
-            </Link>
+        <header>
+            <nav>
+                <Link href={'/'}>
+                    <div className="logo">
+                        <span className="logo">
+                            Restary
+                        </span>
+                    </div>
+                </Link>
 
-            <ul id='links-pc' className="nav-links">
-                <li>
-                    <Link href="#reserve">
-                        <span>RESERVE A TABLE</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/menu">
-                        <span>BROWSE MENU</span>
-                    </Link>
-                </li>
-            </ul>
+                <ul id='links-pc' className="nav-links">
+                    <li onClick={Click}>
+                        <Link href={"/#reserve"}>
+                            <span>RESERVE A TABLE</span>
 
-            <ul id='social-pc' className="social-links">
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/menu">
+                            <span>BROWSE MENU</span>
+                        </Link>
+                    </li>
+                </ul>
 
-                <li>
-                    <Link href="#">
-                        <AiOutlineFacebook className="social-icon" />
-                    </Link>
+                <ul id='social-pc' className="social-links ">
 
-                </li>
-                <li>
-                    <Link href="#">
-                        <AiOutlineInstagram className="social-icon" />
-                    </Link>
-                </li>
-            </ul>
+                    <li>
+                        <Link href="https://www.linkedin.com/in/dylan-vivant/">
+                            <AiOutlineFacebook className="social-icon" />
+                        </Link>
 
-            <details open={"open"} >
-                <summary>
-                    <AiOutlineMenu className="menu-icon" />
-                    <AiOutlineClose className="close-icon" />
-                </summary>
-                <div className="menu-mobile">
-                    <ul className="nav-links">
-                        <li>
-                            <Link href="#reserve">
-                                <span>RESERVE A TABLE</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/menu">
-                                <span>BROWSE MENU</span>
-                            </Link>
-                        </li>
-                    </ul>
+                    </li>
+                    <li>
+                        <Link href="https://www.makeitdifferently.com/">
+                            <AiOutlineInstagram className="social-icon" />
+                        </Link>
+                    </li>
+                </ul>
 
-                    <ul className="social-links">
+                <details open={"open"} >
+                    <summary>
+                        <AiOutlineMenu className="menu-icon" />
+                        <AiOutlineClose className="close-icon" />
+                    </summary>
+                    <div className="menu-mobile">
+                        <ul className="nav-links">
+                            <li>
+                                <Link href="#reserve">
+                                    <span>RESERVE A TABLE</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/menu">
+                                    <span>BROWSE MENU</span>
+                                </Link>
+                            </li>
+                        </ul>
 
-                        <li>
-                            <Link href="#">
-                                <AiOutlineFacebook className="social-icon" />
-                            </Link>
+                        <ul className="social-links">
 
-                        </li>
-                        <li>
-                            <Link href="#">
-                                <AiOutlineInstagram className="social-icon" />
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-            </details>
-        </nav>
+                            <li>
+                                <Link href="#">
+                                    <AiOutlineFacebook className="social-icon" />
+                                </Link>
+
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    <AiOutlineInstagram className="social-icon" />
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </nav>
+        </header>
     )
 }

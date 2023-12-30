@@ -1,0 +1,47 @@
+section {
+    height: 59vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.not-found h1 {
+    text-align: center;
+    font-family: var(--text);
+    font-size: 100px;
+
+}
+
+.error {
+    margin-top: 3vh;
+}
+
+.error p {
+    font-family: var(--text);
+    text-align: center;
+    font-weight: bold;
+}
+
+.back {
+    text-align: center;
+    font-family: var(--title);
+    text-decoration: none;
+    margin-top: 1vh;
+}
+
+.back a {
+    color: var(--orange);
+}
+
+.back a:hover {
+    color: var(--links);
+}

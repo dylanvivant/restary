@@ -1,0 +1,185 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 325px;
+
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 325px;
+    padding-left: 3vw;
+    border-left: 1px solid var(--orange);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 235px;
+}
+
+.contactInfo h3 {
+    font-family: Praise;
+    color: #000;
+    font-size: 70px;
+}
+
+.contactContent {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.contactContent .social-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--orange);
+    margin-right: 15px;
+}
+
+.horaire {
+    display: flex;
+}
+
+.horaire .social-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--orange);
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.contactInfo a {
+    font-size: 20px;
+    font-family: var(--text);
+    color: var(--dark-grey);
+}
+
+.contactInfo a:hover {
+    color: var(--links);
+    transition: all 0.3s ease-in-out;
+}
+
+.operatingHours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 115px;
+}
+
+.operatingHours p {
+    color: var(--dark-grey);
+    font-size: 20px;
+    font-family: var(--text);
+    text-align: left;
+}
+
+.copyRight {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.copyRight p {
+    color: black;
+}
+
+.menu-footers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 325px;
+    width: 25%;
+}
+
+.menu-footer {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-footer h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: var(--text);
+}
+
+.menu-footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 85%;
+
+}
+
+.menu-footer ul a {
+    color: var(--links);
+    font-family: var(--text);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-footer ul a:hover {
+    color: var(--orange);
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.socialLinks-footer ul {
+    display: flex;
+    justify-content: left;
+}
+
+.socialLinks-footer ul li {
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .contactInfo h3 {
+
+        font-size: 8vw;
+    }
+
+    .contactContent .social-icon {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .horaire .social-icon {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .contactInfo a {
+        font-size: 2vw;
+    }
+
+    .operatingHours p {
+        font-size: 2.5vw;
+    }
+
+    .menu-footers {
+
+        width: 32vw;
+    }
+
+    .menu-footer h3 {
+        font-size: 2.5vw;
+    }
+
+    .menu-footer ul li {
+        font-size: 2vw;
+    }
+
+}

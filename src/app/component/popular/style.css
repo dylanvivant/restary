@@ -1,0 +1,117 @@
+.popular {
+    margin-bottom: 10vh;
+}
+
+.container {
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 140vw;
+    white-space: nowrap;
+}
+
+h4 {
+    font-family: var(--title);
+    color: #000;
+    font-size: 42px;
+    text-align: center;
+}
+
+.card {
+    height: 383px;
+    width: 278px;
+    margin-bottom: 20px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    margin-top: 1px;
+}
+
+
+img {
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.card-content {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    height: 80%;
+    align-items: center;
+}
+
+h3 {
+    font-family: var(--text);
+    color: var(--dark-grey);
+    font-weight: 300;
+    font-size: 16px;
+    width: 70%;
+}
+
+.card-content span {
+    font-family: var(--price);
+    color: #19BD00;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Ajoutez cette classe au conteneur de votre slider */
+.slider-mask {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Créez des éléments pseudo pour l'effet de flou */
+.slider-mask::before,
+.slider-mask::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    /* Ajustez la largeur de l'effet de flou ici */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider-mask::before {
+    left: 0;
+    background: linear-gradient(to right, #FFFBF5 0%, transparent 100%);
+}
+
+.slider-mask::after {
+    right: 0;
+    background: linear-gradient(to left, #FFFBF5 0%, transparent 100%);
+}
+
+.button {
+    /* margin: auto; */
+    display: flex;
+    /* width: 800px; */
+    justify-content: space-evenly;
+    /* height: 35%; */
+    align-items: center;
+}

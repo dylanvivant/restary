@@ -1,0 +1,178 @@
+.guest-review {
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+article {
+    height: 160px;
+}
+
+.reviews {
+    width: 49%;
+    border-left: 1px solid var(--orange);
+    padding-left: 4%;
+    height: 800px;
+}
+
+.title-reviews {
+    height: 20%;
+}
+
+.title-reviews h2 {
+    text-align: left;
+}
+
+
+.title-reviews h4 {
+    text-align: left;
+
+}
+
+.slider-mask-z {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Créez des éléments pseudo pour l'effet de flou sur le haut et le bas */
+.slider-mask-z::before,
+.slider-mask-z::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider-mask-z::before {
+    top: 0;
+    background: linear-gradient(to bottom, #FFFBF5 0%, transparent 100%);
+    width: 80%;
+
+}
+
+.slider-mask-z::after {
+    bottom: 0;
+    top: auto;
+    /* Assurez-vous que l'élément est positionné en bas */
+    background: linear-gradient(to top, #FFFBF5 0%, transparent 100%);
+    width: 80%;
+}
+
+.header-review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.content-review p {
+    color: var(--dark-grey);
+    font-size: 12px;
+    text-align: left;
+    width: 60%;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.name h4 {
+    font-size: 20px;
+    font-family: var(--text);
+    font-weight: 600;
+}
+
+.name span {
+    color: var(--links);
+    font-size: 16px;
+    font-family: var(--text);
+}
+
+.container-img {
+    width: 50%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .guest-review {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    article {
+        width: 95%;
+    }
+
+    .reviews {
+        width: 100%;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .content-review p {
+
+        width: 100%;
+    }
+
+    .slider-mask-z::before,
+    .slider-mask-z::after {
+
+        width: 100%;
+    }
+
+    .container-img {
+        width: 90%;
+        margin-bottom: 7vh;
+    }
+
+    .container-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .guest-review {
+        flex-direction: column;
+    }
+
+    article {
+        width: 95%;
+    }
+
+    .reviews {
+        width: 100%;
+    }
+
+    .container-img img {
+        display: none;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .content-review p {
+
+        width: 100%;
+    }
+
+    .slider-mask-z::before,
+    .slider-mask-z::after {
+
+        width: 100%;
+    }
+
+}
