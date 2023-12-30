@@ -33,7 +33,7 @@ const Table = React.forwardRef((props, ref) => {
         <section ref={ref} id={props.id} className="reservation-form-container">
             <h2>Reserve</h2>
             <h4>Your Table</h4>
-            <p>Once you've made a reservation, kindly await for our confirmation email.</p>
+            <p>Once you&apos;ve made a reservation, kindly await for our confirmation email.</p>
             <form onSubmit={handleSubmit}>
                 <div className="formText">
                     <div className="labeltext">

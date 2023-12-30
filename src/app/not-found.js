@@ -14,7 +14,7 @@ export default function NotFound() {
                     <h1>404 - Not found</h1>
                 </div>
                 <div className="error">
-                    <p>You didn't break anything, but we cannot find what you're looking for.</p>
+                    <p>You didn&apos;t break anything, but we cannot find what you&apos;re looking for.</p>
                     <div className="back">
                         <a href="/">Back to homepage</a>
                     </div>

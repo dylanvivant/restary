@@ -4,8 +4,7 @@ import React from 'react'
 import GuestReviews from './component/GuestReviews'
 import './style.css'
 
-import Link from 'next/link';
-
+import Image from 'next/image'
 
 import { Reviews } from '@/app/data/review';
 
@@ -48,7 +47,7 @@ export default function ReviewsSection() {
             </div>
 
             <div className="container-img">
-                <img src="/reviews/alex-haney-CAhjZmVk5H4-unsplash.webp" alt="Image d'illustration" width={570} height={800} />
+                <Image src="/reviews/alex-haney-CAhjZmVk5H4-unsplash.webp" alt="Image d'illustration" width={570} height={800} />
             </div>
         </section>
     )

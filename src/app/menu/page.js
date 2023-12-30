@@ -3,7 +3,7 @@ import { menu } from '../data/menu';
 import Navbar from '../component/navbar/Navbar';
 import Footer from '../component/footer/Footer';
 import './style.css';
-
+import Image from 'next/image';
 export default function Page() {
     // Group menu items by category
     const menuByCategory = menu.reduce((acc, item) => {
@@ -37,7 +37,7 @@ export default function Page() {
                                     {menuByCategory[category].map((item, index) => (
                                         <div className="menu-item" key={index}>
                                             <div className="menu-item-image">
-                                                <img src={item.cover} alt={item.title} width={150} height={150} />
+                                                <Image src={item.cover} alt={item.title} width={150} height={150} />
                                             </div>
                                             <div className="content-menu">
                                                 <div className="menu-item-title">

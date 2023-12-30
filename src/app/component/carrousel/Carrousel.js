@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 import './style.css'
 import 'animate.css';
@@ -36,7 +37,7 @@ export default function Carrousel({ Click }) {
         <section className="carrousel">
             <div className={'slide'} >
 
-                <img src="/carrousel/image-1.webp" alt="restaurant" className="image" width={1140} height={450} />
+                <Image src="/carrousel/image-1.webp" alt="restaurant" className="image" width={1140} height={450} />
 
             </div>
             <div className="content-slide">
