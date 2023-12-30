@@ -44,10 +44,7 @@ article {
     content: '';
     position: absolute;
     left: 0;
-    width: 100%;
-    /* S'étend sur toute la largeur */
     height: 100px;
-    /* Ajustez la hauteur de l'effet de flou ici */
     z-index: 2;
     pointer-events: none;
 }
@@ -102,4 +99,80 @@ article {
 
 .container-img {
     width: 50%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .guest-review {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    article {
+        width: 95%;
+    }
+
+    .reviews {
+        width: 100%;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .content-review p {
+
+        width: 100%;
+    }
+
+    .slider-mask-z::before,
+    .slider-mask-z::after {
+
+        width: 100%;
+    }
+
+    .container-img {
+        width: 90%;
+        margin-bottom: 7vh;
+    }
+
+    .container-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .guest-review {
+        flex-direction: column;
+    }
+
+    article {
+        width: 95%;
+    }
+
+    .reviews {
+        width: 100%;
+    }
+
+    .container-img img {
+        display: none;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .content-review p {
+
+        width: 100%;
+    }
+
+    .slider-mask-z::before,
+    .slider-mask-z::after {
+
+        width: 100%;
+    }
+
 }

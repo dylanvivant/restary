@@ -16,7 +16,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 325px;
-    padding-left: 25px;
+    padding-left: 3vw;
     border-left: 1px solid var(--orange);
 }
 
@@ -30,7 +30,7 @@
 .contactInfo h3 {
     font-family: Praise;
     color: #000;
-    font-size: 70px;
+    font-size: 8vw;
 }
 
 .contactContent {
@@ -40,8 +40,8 @@
 }
 
 .contactContent .social-icon {
-    width: 24px;
-    height: 24px;
+    width: 3vw;
+    height: 3vw;
     color: var(--orange);
     margin-right: 15px;
 }
@@ -51,15 +51,15 @@
 }
 
 .horaire .social-icon {
-    width: 24px;
-    height: 24px;
+    width: 3vw;
+    height: 3vw;
     color: var(--orange);
     margin-right: 15px;
     margin-top: 5px;
 }
 
 .contactInfo a {
-    font-size: 14px;
+    font-size: 2vw;
     font-family: var(--text);
     color: var(--dark-grey);
 }
@@ -78,7 +78,7 @@
 
 .operatingHours p {
     color: var(--dark-grey);
-    font-size: 14px;
+    font-size: 2vw;
     font-family: var(--text);
     text-align: left;
 }
@@ -98,7 +98,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 325px;
-    width: 25%;
+    width: 32vw;
 }
 
 .menu-footer {
@@ -107,7 +107,7 @@
 }
 
 .menu-footer h3 {
-    font-size: 20px;
+    font-size: 2.5vw;
     font-weight: bold;
     color: black;
     font-family: var(--text);
@@ -119,6 +119,10 @@
     justify-content: space-evenly;
     height: 85%;
 
+}
+
+.menu-footer ul li {
+    font-size: 2vw;
 }
 
 .menu-footer ul a {

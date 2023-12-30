@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 import Slider from 'react-slick';
@@ -14,16 +14,46 @@ import './style.css'
 import { mostPopular } from '@/app/data/mostpopular';
 
 export default function Popular() {
-    const settings = {
+    // Définir un état pour stocker la largeur de l'écran
+    const [width, setWidth] = useState(window.innerWidth);
+
+    // Gérer le redimensionnement de la fenêtre
+
+    useEffect(() => {
+        // Mettre à jour la largeur une fois que le composant est monté
+        setWidth(window.innerWidth);
+
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Nettoyer l'écouteur d'événement lors du démontage du composant
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // S'assurer que width est défini avant de continuer
+    if (width === null) return null; // ou un placeholder/loader
+    // Paramètres de base pour le slider
+    const baseSettings = {
         dots: false,
         infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
         autoplay: true,
         speed: 5000,
         autoplaySpeed: 0,
         cssEase: "linear"
     };
+
+    // Adapter les paramètres en fonction de la largeur de l'écran
+    let settings;
+    if (width <= 767) {
+        settings = { ...baseSettings, slidesToShow: 1, slidesToScroll: 1 };
+    } else if (width >= 768 && width <= 859) {
+        settings = { ...baseSettings, slidesToShow: 2, slidesToScroll: 1 };
+    } else if (width >= 860 && width <= 1140) {
+        settings = { ...baseSettings, slidesToShow: 3, slidesToScroll: 1 };
+    } else (settings = { ...baseSettings, slidesToShow: 4, slidesToScroll: 1 })
 
     return (
         <section className="popular">
