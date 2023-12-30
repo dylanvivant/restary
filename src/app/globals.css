@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+
 :root {
   --grey: #cacaca;
   --dark-grey: #666666;
@@ -8,7 +10,8 @@
 
   --title: 'Merriweather', serif;
   --text: 'Inter', sans-serif;
-  --logo-font: 'Praise', cursive;
+  --logo-font: 'Praise';
+  ;
   --price: 'Poppins', sans-serif;
 
 }

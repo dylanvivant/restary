@@ -15,7 +15,7 @@ export default function Navbar({ Click }) {
         <header>
             <nav>
                 <Link href={'/'}>
-                    <div className="logo">
+                    <div>
                         <span className="logo">
                             Restary
                         </span>
