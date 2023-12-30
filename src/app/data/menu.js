@@ -31,7 +31,7 @@ export const menu = [
         category: 'Salads',
         title: 'Cesar Salad',
         description: 'Marinated grilled chicken, zucchini, Feta cheese, crispy bread, pine nuts, baby leaf lettuce, cherry tomatoes',
-        cover: '/menu/cesar-salad.webp',
+        cover: 'menu/cesar-salad.webp',
         price: '$7.00'
     },
     {

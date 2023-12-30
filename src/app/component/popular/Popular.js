@@ -14,13 +14,11 @@ import './style.css'
 import { mostPopular } from '@/app/data/mostpopular';
 
 export default function Popular() {
-    // Définir un état pour stocker la largeur de l'écran
-    const [width, setWidth] = useState(window.innerWidth);
-
-    // Gérer le redimensionnement de la fenêtre
+    // Initialisez width à undefined
+    const [width, setWidth] = useState(undefined);
 
     useEffect(() => {
-        // Mettre à jour la largeur une fois que le composant est monté
+        // Mettez à jour la largeur une fois que le composant est monté
         setWidth(window.innerWidth);
 
         const handleResize = () => {
@@ -29,12 +27,13 @@ export default function Popular() {
 
         window.addEventListener('resize', handleResize);
 
-        // Nettoyer l'écouteur d'événement lors du démontage du composant
+        // Nettoyez l'écouteur d'événement lors du démontage du composant
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    // S'assurer que width est défini avant de continuer
-    if (width === null) return null; // ou un placeholder/loader
+    // Gérez le cas où width est indéfini
+    if (typeof width === "undefined") return null; // ou un loader
+
     // Paramètres de base pour le slider
     const baseSettings = {
         dots: false,
