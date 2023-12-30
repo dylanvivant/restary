@@ -30,7 +30,7 @@
 .contactInfo h3 {
     font-family: Praise;
     color: #000;
-    font-size: 8vw;
+    font-size: 70px;
 }
 
 .contactContent {
@@ -40,8 +40,8 @@
 }
 
 .contactContent .social-icon {
-    width: 3vw;
-    height: 3vw;
+    width: 24px;
+    height: 24px;
     color: var(--orange);
     margin-right: 15px;
 }
@@ -51,15 +51,15 @@
 }
 
 .horaire .social-icon {
-    width: 3vw;
-    height: 3vw;
+    width: 24px;
+    height: 24px;
     color: var(--orange);
     margin-right: 15px;
     margin-top: 5px;
 }
 
 .contactInfo a {
-    font-size: 2vw;
+    font-size: 20px;
     font-family: var(--text);
     color: var(--dark-grey);
 }
@@ -78,7 +78,7 @@
 
 .operatingHours p {
     color: var(--dark-grey);
-    font-size: 2vw;
+    font-size: 20px;
     font-family: var(--text);
     text-align: left;
 }
@@ -98,7 +98,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 325px;
-    width: 32vw;
+    width: 25%;
 }
 
 .menu-footer {
@@ -107,7 +107,7 @@
 }
 
 .menu-footer h3 {
-    font-size: 2.5vw;
+    font-size: 20px;
     font-weight: bold;
     color: black;
     font-family: var(--text);
@@ -119,10 +119,6 @@
     justify-content: space-evenly;
     height: 85%;
 
-}
-
-.menu-footer ul li {
-    font-size: 2vw;
 }
 
 .menu-footer ul a {
@@ -145,4 +141,45 @@
 
 .socialLinks-footer ul li {
     margin-right: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .contactInfo h3 {
+
+        font-size: 8vw;
+    }
+
+    .contactContent .social-icon {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .horaire .social-icon {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .contactInfo a {
+        font-size: 2vw;
+    }
+
+    .operatingHours p {
+        font-size: 2.5vw;
+    }
+
+    .menu-footers {
+
+        width: 32vw;
+    }
+
+    .menu-footer h3 {
+        font-size: 2.5vw;
+    }
+
+    .menu-footer ul li {
+        font-size: 2vw;
+    }
+
 }

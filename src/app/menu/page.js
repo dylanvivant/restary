@@ -27,7 +27,7 @@ export default function Page() {
                     </div>
                     <div className="menu-content">
                         {Object.keys(menuByCategory).map((category) => (
-                            <div key={category} id={toValidId(category)}>
+                            <div className='category' key={category} id={toValidId(category)}>
                                 <div className="menu-category-title">
                                     <h5> {category}</h5>
                                     <div className="line" />
